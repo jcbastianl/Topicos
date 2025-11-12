@@ -73,7 +73,7 @@ Para usar el módulo de mensajería:
 
 1. **Instalar dependencias adicionales**:
    ```bash
-   pip install paho-mqtt
+   uv add paho-mqtt
    ```
 
 2. **Asegurarse de que Mosquitto esté corriendo**:
@@ -82,7 +82,7 @@ Para usar el módulo de mensajería:
 
 3. **Ejecutar el cliente MQTT**:
    ```bash
-    python manage.py runmqtt
+   uv run python manage.py runmqtt
    ```
 
 El comando inicia el cliente MQTT que se conecta al broker local, se suscribe al tópico `carrera/registro/#` y procesa los mensajes entrantes de los jueces. Los tiempos se almacenan automáticamente en la base de datos como registros `RegistroTiempo`.
